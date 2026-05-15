@@ -419,7 +419,7 @@ with st.sidebar:
     page = st.radio("", ["📈 Command Center", "⚖️ Re-balance", "📰 Global Market News", "🔮 Wealth Forecast", "🌍 Macro Environment", "🧠 AI Optimizer Lab", "⚙️ Database Control", "🎫 Support Ticket"])
     st.divider()
 
-    if st.button("🔄 Force Refresh (Fix Unknowns)"):
+    if st.button("🔄 Refresh"):
         st.cache_data.clear()
         st.rerun()
 
